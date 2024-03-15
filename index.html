@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download</title>
+</head>
+<body onload="downloadFile()">
+    <p>Файл начнет загружаться автоматически при загрузке этой страницы.</p>
+    <script>
+        function downloadFile() {
+            var link = document.createElement('a');
+            link.href = '§c§lWorld§f§lClans §7by frazbi.zip';
+            link.download = 'WorldClans_by_frazbi.zip';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+    </script>
+</body>
+</html>
